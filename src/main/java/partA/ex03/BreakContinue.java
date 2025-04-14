@@ -8,13 +8,13 @@ public class BreakContinue {
         for( int i = 0 ; i < 10 ; i++ ) {
 
             if( i % 2 == 0) {
-
+                continue;
             }
 
-            response += ("The number is " + i );
+            response += ("\nThe number is " + i );
 
             if( i == 7 ) {
-
+                break;
             }
 
         }

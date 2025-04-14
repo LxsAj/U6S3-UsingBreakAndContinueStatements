@@ -6,11 +6,12 @@ public class CountChar {
 
         int max = str.length();
         int count = 0;
+        for(int i = 0; i < str.length(); i++){
+            if (str.charAt(i) == 'w'){
+                count++;
+            }
 
-//            if (str.charAt(i) != 'w')
-//                continue;
-
-        count++;
+        }
 
        str += ("Counting w : " + count );
         return str;
