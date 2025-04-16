@@ -17,8 +17,11 @@ public class AlgoChallenge {
      */
 
     public static Boolean multipleOf(int number){
-
-        return null;
+        if (number % 3 == 0 || number % 5 == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 
@@ -36,8 +39,25 @@ public class AlgoChallenge {
      */
 
     public static Boolean checkTemp(int temp1, int temp2) {
+        if(temp1 < 0 && temp2 > 100){
+            return true;
+        }else{
+            if (temp2 < 0 && temp1 > 100){
+                return true;
+            }
+            return false;
+        }
+    }
+    public static void main(String[] args){
+        System.out.println(multipleOf(3));
+        System.out.println(multipleOf(10));
+        System.out.println(multipleOf(8));
 
-        return null;
+        System.out.println(checkTemp(120,-1));
+        System.out.println(checkTemp(-1,120));
+        System.out.println(checkTemp(2,120));
     }
 
+
 }
+
